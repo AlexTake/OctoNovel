@@ -1,0 +1,11 @@
+; English <en> to Ukrainian <uk> localization document for `ThirdScene` naninovel script
+
+# 749672da
+; @print "\"Well here I am\"" author:{PlayerName} reset:true speed:1
+@print "\"Ну я тут...\"" author:{PlayerName} reset:true speed:1
+# 4762e4de
+; @print "In front of me I saw a huge safe" speed:2 reset:true
+@print "Перед собою я побачив величезний сейф" speed:2 reset:true
+# ac88f274
+; @print "\"Looks like I'm going to have to tighten up.\"" author:{PlayerName} speed:2 reset:true
+@print "\"Схоже, мені доведеться напрягтись.\"" author:{PlayerName} speed:2 reset:true

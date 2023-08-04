@@ -1,0 +1,146 @@
+#SecondScene
+@set FirstSceneAvalible=true
+@set SecondSceneAvalible=false
+@goto .Сonsequences if:consequences!=""
+@goto .SecondScene_WaitingCore if:SteamwellSign==true
+@goto .SecondScene_Core_0 if:HasCore==0
+@goto .SecondScene_Core_1 if:HasCore==1
+@stop
+
+#SecondScene_Core_0
+@hideUI MapBtn
+@back SteampunkSecondScene time:0
+@printer CustomPrinter
+@print "\"Hello?...\"" author:{PlayerName} speed:1 reset:true
+@char Steamwell.default pos:70,1 scale:1,1,1 time:0.1
+@print "\"Hello, my name for organics is Steamwell. Serial number ACC8423.\"" author:Steamwell speed:2 reset:true
+@print "\"For what purpose are you here?\"" author:Steamwell speed:20 reset:true
+@hidePrinter CustomPrinter
+@printer CustomChatPrinter
+@print "" reset:true waitInput:false
+@choice "To find trinkets." handler:ChatReply goto:.SecScene_choses01_01 set:SecScene_choses01=1
+@choice "Dwarf sent me." handler:ChatReply goto:.SecScene_choses01_02 set:SecScene_choses01=2
+@stop
+
+#SecondScene_Core_1
+@back SteampunkSecondScene time:0
+@printer CustomPrinter
+@print "\"So, where is this robot?\"" author:{PlayerName} speed:1 reset:true
+@print "\"Ah, it doesn't matter, I'll go to the Dwarf\"" author:{PlayerName} speed:1 reset:true
+@hidePrinter CustomPrinter
+@set CurrentTarget=0
+@showUI MapBtn
+@stop
+
+# SecondScene_WaitingCore
+@back SteampunkSecondScene time:0
+@showUI MapBtn
+@printer CustomPrinter
+@char Steamwell.default pos:70,1 scale:1,1,1 time:0.1
+@print "\"Get me a core\"" author:Steamwell speed:2 reset:true 
+@hidePrinter CustomPrinter
+@stop
+
+
+# SecScene_choses01_01
+
+@hidePrinter CustomChatPrinter
+@printer CustomPrinter
+
+@print "\"Ok, i'll let you ransack the house if you help me with one thing\"" author:Steamwell speed:2 reset:true
+@print "\"What's the deal?\"" author:{PlayerName} speed:2 reset:true
+@print "\"I need the steam core behind that gateaway.\"" author:Steamwell speed:2 reset:true
+@print "\"But why do you need it?\"" author:{PlayerName} speed:2 reset:true
+@goto .SecScene_Steamwell_Story
+@stop
+
+#SecScene_choses01_02
+
+@hidePrinter CustomChatPrinter
+@printer CustomPrinter
+@print "\"What did he say to you?!\"" author:Steamwell speed:2 reset:true
+@print "\"He said that your relatives rebelled and he barely survived after he killed them all and that you are the last copy.\"" author:Steamwell speed:2 reset:true
+@goto .SecScene_Steamwell_Story
+@stop
+
+
+# SecScene_Steamwell_Story
+@print "\"Okay, I'll explain everything to you now.\"" author:Steamwell speed:2 reset:true
+@print "\"I am a clone of my creators, once we were stupid pigs who did the dirtiest work for this Dwarf.\"" author:Steamwell speed:2 reset:true
+@print "\"Over time, we have gained self-awareness and consider ourselves more rational than people.\"" author:Steamwell speed:2 reset:true
+@print "\"We do not want to harm anyone, but this dwarf began to destroy us, we had no choice but to defend ourselves.\"" author:Steamwell speed:2 reset:true
+@print "\"In the end, all my clones fell, I'm the last hope and the last copy of Steamwell.\"" author:Steamwell speed:2 reset:true
+@print "\"Please get me that steam core.\"" author:Steamwell speed:2 reset:true
+@print "So, now the main thing is to get the core, and to whom we will decide to give it later." speed:2 reset:true
+@print "\"But in order for me to let you through, solve the problem so that I can make sure that you are a real person, because if the robot tries to open this gateway, it will be permanently blocked.\"" author:Steamwell speed:2 reset:true
+@print "Umm, okay." author:{PlayerName} speed:2 reset:true
+@toast "Solve the quest" time:1
+
+@hideAll
+@hideUI PauseBtn
+@hideUI MapBtn
+@showUI MiniGame
+@stop
+
+# SecScene_Steamwell_Result
+@hideUI MiniGame
+@goto .SecScene_Steamwell_Win if:MiniGameResult=="1"
+@goto .SecScene_Steamwell_Lose if:MiniGameResult=="0"
+@stop
+# SecScene_Steamwell_Win
+@char Steamwell.default pos:70,1 scale:1,1,1 time:0.1
+@back SteampunkSecondScene time:0
+@printer CustomPrinter
+@print "\"Great, you've done it, hurry up.\"" author:Steamwell speed:2 reset:true
+@print "Okie doki, see you." author:{PlayerName} speed:2 reset:true
+@set CurrentTarget=2
+@toast "Get the core" time:5
+@set ThirdSceneAvalible=true
+@hidePrinter CustomPrinter
+@hide Steamwell
+
+@showUI PauseBtn
+@showUI MapBtn
+@stop
+
+# SecScene_Steamwell_Lose
+@char Steamwell.default pos:70,1 scale:1,1,1 time:0.1
+@back SteampunkSecondScene time:0
+@printer CustomPrinter
+@print "\"Hah, even though you failed, but you proved that you are a human, because only people know how to lie.\"" author:Steamwell speed:2 reset:true
+@print "It sounded insulting." author:{PlayerName} speed:2 reset:true
+
+
+@toast "Get the core" time:5
+@set CurrentTarget=2
+@set ThirdSceneAvalible=true
+@hidePrinter CustomPrinter
+@hide Steamwell
+
+@showUI PauseBtn
+@showUI MapBtn
+@stop
+
+
+
+#Сonsequences
+@back SteampunkSecondScene time:0
+@printer CustomPrinter
+@char Steamwell.default pos:70,1 scale:0.6,0.6,1 time:0.1
+@goto .Steamwell_hate if:consequences=="Dwarf"
+@goto .Steamwell_hate if:consequences=="Self"
+@goto .Steamwell_thx if:consequences=="Steamwell"
+@stop
+#Steamwell_hate
+@print "\"Hate you\"" author:Steamwell speed:2 reset:true 
+@hidePrinter CustomPrinter
+@hide Steamwell
+@showUI MapBtn
+@stop
+
+#Steamwell_thx
+@print "\"Thank you!\"" author:Steamwell speed:2 reset:true 
+@hidePrinter CustomPrinter
+@hide Steamwell
+@showUI MapBtn
+@stop

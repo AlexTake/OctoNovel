@@ -1,0 +1,15 @@
+#ThirdScene
+@set SecondSceneAvalible=true
+@set FirstSceneAvalible=true
+@back SteampunkThirdScene time:0
+@printer CustomPrinter
+
+@print "\"Well here I am\"" author:{PlayerName} reset:true speed:1
+
+@print "In front of me I saw a huge safe" speed:2 reset:true
+
+@print "\"Looks like I'm going to have to tighten up.\"" author:{PlayerName} speed:2 reset:true
+@set CurrentTarget=1
+@hidePrinter CustomPrinter
+@showUI SafeUI
+@stop

@@ -1,0 +1,62 @@
+; English <en> to Ukrainian <uk> localization document for `FourthScene` naninovel script
+
+# a71777
+; @print "\"Get me a core\"" author:Dwarf speed:2 reset:true 
+@print "\"Добудь ядро.\"" author:Dwarf speed:2 reset:true 
+# d2c55cd0
+; @print "\"You are my biggest mistake!!!\"" author:Dwarf speed:2 reset:true 
+@print "\"Ти моя найбільша помилка!!!\"" author:Dwarf speed:2 reset:true 
+# d048be8
+; @print "\"I am not a mistake, I am the crown of evolution\"" author:Steamwell speed:2 reset:true 
+@print "\"Я не помилка, я вінець еволюції\"" author:Steamwell speed:2 reset:true 
+# dc7d7869
+; @print "When they saw me, they became silent, waiting for my choice." reset:true speed:1
+@print "Побачивши мене, вони замовкли, чекаючи мого вибору." reset:true speed:1
+# d1a91b5f
+; @toast "Make o choise" time:5
+ @toast "Зроби вибiр" time:5
+# 2e5522e4
+; @print "" reset:true waitInput:false	
+@print "" reset:true waitInput:false
+# 2fdee4b3
+; @choice handler:ChatReply "Give core to Dwarf" set:FirScene_choses01=1 goto:.FirScene_choses01_01
+@choice handler:ChatReply "Дайте ядро ​​гному" set:FirScene_choses01=1 goto:.FirScene_choses01_01
+# 6d1f1293
+; @choice handler:ChatReply "Give core to Steamwell" set:FirScene_choses01=2 goto:.FirScene_choses01_02
+@choice handler:ChatReply "Дайте ядро ​​Стiмвелу" set:FirScene_choses01=2 goto:.FirScene_choses01_02
+# 6631db4b
+; @choice handler:ChatReply "keep the core" set:FirScene_choses01=3  goto:.FirScene_choses01_03
+@choice handler:ChatReply "Залишити собi" set:FirScene_choses01=3  goto:.FirScene_choses01_03
+# 1ba81fb3
+; @print "\"Thank you, now I can turn off the robot and live the rest of my life in peace.\"" author:Dwarf speed:2 reset:true 
+@print "\"Дякую, тепер я можу вимкнути робота і спокійно прожити решту життя.\"" author:Dwarf speed:2 reset:true 
+# 7f4669de
+; @print "\"You made a mistake, you ruined something you can't even comprehend.\"" author:Steamwell speed:2 reset:true 
+@print "\"Ти зробив помилку, ти зіпсував те, чого навіть не можеш зрозуміти.\"" author:Steamwell speed:2 reset:true 
+# fcda64fd
+; @print "\"The dwarf turned off Steamwell and quickly disappeared behind a mountain of tin debris.\"" speed:2 reset:true 
+@print "\"Гном вимкнув Steamwell і швидко зник за горою сміття.\"" speed:20 reset:true 
+# b43ccde8
+; @print "\"Thank you, now I can develop to the level of a god and bring peace and prosperity to our lands in gratitude to you.\"" author:Steamwell speed:2 reset:true 
+@print "\"Дякую тобі, тепер я можу розвинутися до рівня бога і принести мир і процвітання нашим землям у вдячність тобі.\"" author:Steamwell speed:2 reset:true
+# 70cc9226
+; @print "\"What have you done, you believed the tin, not me, what will happen to me now.\"" author:Dwarf speed:2 reset:true 
+@print "\"Що ти наробив, ти повірив жерсті, а не мені, що тепер буде зі мною.\"" author:Dwarf speed:2 reset:true 
+# 6b9f0758
+; @print "\"A decade later, Steamwell, as promised, revived our town, under his leadership, our land became inhabited again...\"" speed:2 reset:true 
+@print "\"Через десятиліття Steamwell, як і обіцяв, відродив наше місто, під його керівництвом наша земля знову стала заселеною...\"" speed:2 reset:true
+# 7f4669de
+; @print "\"You made a mistake, you ruined something you can't even comprehend.\"" author:Steamwell speed:2 reset:true 
+@print "\"Ти зробив помилку, ти зіпсував те, чого навіть не можеш зрозуміти.\"" author:Steamwell speed:2 reset:true
+# 58b896e0
+; @print "\"What have you done, you ruined my old age.\"" author:Dwarf speed:2reset:true 
+@print "\"Що ти накоїв, ти зіпсував мені старість.\"" author:Dwarf speed:2 reset:true 
+# 8bc8a6f
+; @print "\"A couple of years later, the tramp returned to the city and saw nothing but complete destruction, other thieves helped him get rid of the core, and he himself continues to wander senselessly through the wasteland.\"" speed:2 reset:true 
+@print "\"Через пару років бродяга повернувся в місто і не побачив нічого, крім повної руйнації, інші злодії допомогли йому позбутися ядра, а сам він продовжує безглуздо блукати по пустирі.\"" speed:2 reset:true 
+# 5a7fcd1c
+; @print "\"Hate you\"" author:Dwarf speed:2 reset:true 
+@print "\"Ненавиджу тебе!\"" author:Dwarf speed:2 reset:true 
+# d34659d3
+; @print "\"Thank you!\"" author:Dwarf speed:2 reset:true 
+@print "\"Дякую!\"" author:Dwarf speed:2 reset:true 

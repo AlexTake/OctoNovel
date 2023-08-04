@@ -1,0 +1,56 @@
+; English <en> to Ukrainian <uk> localization document for `FirstScene` naninovel script
+
+# 82e20b2
+; @input PlayerName
+@input PlayerName
+# 2aff092d
+; @print "Finally I made my way" reset:true speed:1
+@print "Нарешті я пробрався" reset:true speed:1
+# c716dcd0
+; @toast "Find something precious" time:5
+@toast "Знайди щось цінне" time:5
+# bd57946c
+; @print "\"khe-Khe..Khe\"" author:??? speed:2 reset:true
+@print "\"Кхе-Кхе..Кхе\"" author:??? speed:2 reset:true
+# edade794
+; @print "\"Who is there?!\"" author:{PlayerName} speed:3 reset:true
+@print "\"Хто там?!\"" author:{PlayerName} speed:3 reset:true
+# 5f828cfe
+; @print "\"This is my house, so it would be better for you to answer who you are while you are alive and well!\"" author:??? speed:3 reset:true 
+@print "\"Це мій дім, то краще б ти відповідав хто ти, поки живий і здоровий!\"" author:??? speed:3 reset:true 
+# 8124acf1
+; @print "\"Hush, hush, I'm just a tramp {PlayerName}, this house looked abandoned, so I decided to profit from some trinkets.\"" author:{PlayerName} speed:2 reset:true 
+@print "\"Тихше, тише, я просто волоцюга {PlayerName}, цей будинок виглядав занедбаним, тож я вирішив поживитися дрібничками.\"" author:{PlayerName} speed:2 reset:true
+# c8aa652e
+; @print "\"So this is it...\"" author:??? speed:2 reset:true 
+@print "\"Так ось воно...\"" author:??? speed:2 reset:true 
+# 3218e881
+; @print "\"Yes, my house became a dump after these damn machines went out of control, now I'm like a rat, hiding from new owners.\"" author:??? speed:2 reset:true 
+@print "\"Так, мій дім став звалищем після того, як ці кляті машини вийшли з-під контролю, тепер я, як щур, ховаюся від нових власників.\"" author:??? speed:2 reset:true 
+# 126fd5e
+; @print "\"By the way, you can call me Dwarf.\"" author:Dwarf speed:2 reset:true 
+@print "\"До речі, можете називати мене Гном.\"" author:Dwarf speed:2 reset:true 
+# 63e229c1
+; @print "\"I have an offer for you.\"" author:Dwarf speed:2 reset:true 
+@print "\"У мене є для вас пропозиція.\"" author:Dwarf speed:2 reset:true 
+# 8b01e9bb
+; @print "\"You deal with the last machine in my house and you can take whatever you want.\"" author:Dwarf speed:2 reset:true 
+@print "\"Ти вирiшуєш проблему з останньою машиною в моєму домі, і ти можеш брати все, що забажаєш.\"" author:Dwarf speed:2 reset:true 
+# dd7e6104
+; @print "\"I managed to kill everyone, but these machines have learned to clone themselves, so far there is only one, since I was able to lock the gateway through which only a living creature can pass\"" author:Dwarf speed:2 reset:true 
+@print "\"Мені вдалося вбити всіх, але ці машини навчилися клонувати себе, поки що є лише одна, оскільки я зміг заблокувати шлюз, через який може пройти лише жива істота.\"" author:Dwarf speed:2 reset:true 
+# 7cdf9756
+; @print "\"Let me know, what's behind that door?\"" author:{PlayerName} speed:2 reset:true 
+@print "\"А, що за тими дверима?\"" author:{PlayerName} speed:2 reset:true 
+# 67577459
+; @print "\"There is a steam core, the only thing they lack for replication\"" author:Dwarf speed:2 reset:true
+@print "\"Там парове ядро, єдине, чого їм не вистачає для реплікації\"" author:Dwarf speed:2 reset:true
+# ddb82c46
+; @print "\"It's funny, but this is the same steam core, without which I will not last a week myself.\"" author:Dwarf speed:2 reset:true
+@print "\"Смішно, але це той самий steam core, без якого я й сам не проживу тижня.\"" author:Dwarf speed:2 reset:true
+# ecf1fad6
+; @print "\"Okie doki, I'll take it for you\"" author:{PlayerName} speed:2 reset:true
+@print "\"Добре, я добуду його.\"" author:{PlayerName} speed:2 reset:true
+# bbdb0cb0
+; @toast "Find steam core" time:5
+@toast "Знайти парове ядро." time:5

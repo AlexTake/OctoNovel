@@ -1,0 +1,5 @@
+#TitleScript
+@back SteamPunkBG time:0
+@spawn Rain wait:false
+@bgm Shady volume:0.1 loop:true
+@stop

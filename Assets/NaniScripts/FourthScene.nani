@@ -1,0 +1,101 @@
+#FourthScene
+@set SecondSceneAvalible=true
+@set FirstSceneAvalible=false
+@goto .Сonsequences if:consequences!=""
+@goto .FourthScene_Core_0 if:HasCore=="0"
+@goto .FourthScene_Core_1 if:HasCore=="1"
+@stop
+
+#FourthScene_Core_0
+@back SteampunkFirstScene time:0
+@showUI MapBtn
+@printer CustomPrinter
+@char Dwarf.default pos:70,1 scale:0.6,0.6,1 time:0.1
+@print "\"Get me a core\"" author:Dwarf speed:2 reset:true 
+@hidePrinter CustomPrinter
+@stop
+
+#FourthScene_Core_1
+@back SteampunkFirstScene time:0
+@printer CustomPrinter
+
+@char Dwarf.default pos:70,1 scale:0.6,0.6,1 time:0.1
+@print "\"You are my biggest mistake!!!\"" author:Dwarf speed:2 reset:true 
+
+@char Steamwell.mirror pos:20,1 scale:0.7,0.7,1 time:0.1
+@print "\"I am not a mistake, I am the crown of evolution\"" author:Steamwell speed:2 reset:true 
+@print "When they saw me, they became silent, waiting for my choice." reset:true speed:1
+@toast "Make o choise" time:5
+@hidePrinter CustomPrinter
+@printer CustomChatPrinter
+
+@print "" reset:true waitInput:false	
+@choice handler:ChatReply "Give core to Dwarf" set:FirScene_choses01=1 goto:.FirScene_choses01_01
+@choice handler:ChatReply "Give core to Steamwell" set:FirScene_choses01=2 goto:.FirScene_choses01_02
+@choice handler:ChatReply "keep the core" set:FirScene_choses01=3  goto:.FirScene_choses01_03
+@stop
+
+#FirScene_choses01_01
+@hidePrinter CustomChatPrinter
+@printer CustomPrinter
+@print "\"Thank you, now I can turn off the robot and live the rest of my life in peace.\"" author:Dwarf speed:2 reset:true 
+@print "\"You made a mistake, you ruined something you can't even comprehend.\"" author:Steamwell speed:2 reset:true 
+@print "\"The dwarf turned off Steamwell and quickly disappeared behind a mountain of tin debris.\"" speed:2 reset:true 
+@hidePrinter CustomPrinter
+@set consequences="Dwarf" 
+@set HasCore=3
+@hide Steamwell
+@hide Dwarf
+@showUI MapBtn
+@stop
+
+#FirScene_choses01_02
+@hidePrinter CustomChatPrinter
+@printer CustomPrinter
+@print "\"Thank you, now I can develop to the level of a god and bring peace and prosperity to our lands in gratitude to you.\"" author:Steamwell speed:2 reset:true 
+@print "\"What have you done, you believed the tin, not me, what will happen to me now.\"" author:Dwarf speed:2 reset:true 
+@print "\"A decade later, Steamwell, as promised, revived our town, under his leadership, our land became inhabited again...\"" speed:2 reset:true 
+@hidePrinter CustomPrinter
+@set consequences="Steamwell" 
+@set HasCore=3
+@hide Steamwell
+@hide Dwarf
+@showUI MapBtn
+@stop
+
+#FirScene_choses01_03
+@hidePrinter CustomChatPrinter
+@printer CustomPrinter
+@print "\"You made a mistake, you ruined something you can't even comprehend.\"" author:Steamwell speed:2 reset:true 
+@print "\"What have you done, you ruined my old age.\"" author:Dwarf speed:2reset:true 
+@print "\"A couple of years later, the tramp returned to the city and saw nothing but complete destruction, other thieves helped him get rid of the core, and he himself continues to wander senselessly through the wasteland.\"" speed:2 reset:true 
+@hidePrinter CustomPrinter
+@set consequences="Self" 
+@set HasCore=3
+@hide Steamwell
+@hide Dwarf
+@showUI MapBtn
+@stop
+
+#Сonsequences
+@printer CustomPrinter
+@char Dwarf.default pos:70,1 scale:0.6,0.6,1 time:0.1
+@back SteampunkFirstScene time:0
+@goto .Dwarf_hate if:consequences=="Steamwell"
+@goto .Dwarf_hate if:consequences=="Self"
+@goto .Dwarf_thx if:consequences=="Dwarf"
+@stop
+#Dwarf_hate
+@print "\"Hate you\"" author:Dwarf speed:2 reset:true 
+@hidePrinter CustomPrinter
+@hide Dwarf
+@showUI MapBtn
+@stop
+
+#Dwarf_thx
+@print "\"Thank you!\"" author:Dwarf speed:2 reset:true 
+@hidePrinter CustomPrinter
+@hide Dwarf
+@showUI MapBtn
+@stop
+

@@ -1,0 +1,67 @@
+; English <en> to Русский <en> localization document for `DefaultUI` managed text document
+
+CGGallery.Title: Картинки
+Confirmation.No: Ні
+Confirmation.Yes: Так
+ControlPanel.Auto: Авто
+ControlPanel.Hide: Скрити
+ControlPanel.Load: Завантажити
+ControlPanel.Log: Лог
+ControlPanel.QuickLoad: Ш.Завантаження
+ControlPanel.QuickSave: Ш.Збереження
+ControlPanel.Save: Зберегти
+ControlPanel.Settings: Параметри
+ControlPanel.Skip: Пропустити
+ControlPanel.Tips: Замітки
+ControlPanel.Title: Меню
+ExternalScriptsBrowser.Info: Обери скрипт
+ExternalScriptsBrowser.Title: Зовнішні скрипт
+General.Close: Закрити
+General.Return: Назад
+Naninovel.UI.ControlPanelTitleButton.ConfirmationMessage: Ви точно хочете вийти?
+Naninovel.UI.GameSettingsFontDropdown.DefaultFontName: Стандарт
+Naninovel.UI.GameSettingsFontSizeDropdown.Default: Стандарт
+Naninovel.UI.GameSettingsFontSizeDropdown.ExtraLarge: Дуже великий
+Naninovel.UI.GameSettingsFontSizeDropdown.Large: Великий
+Naninovel.UI.GameSettingsFontSizeDropdown.Small: Маленький
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption1: Дуже низьке
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption2: Низьке
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption3: Середє
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption4: Високе
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption5: Дуже високе
+Naninovel.UI.GameSettingsGraphicsDropdown.GraphicOption6: Ультра
+Naninovel.UI.GameSettingsScreenModeDropdown.ExclusiveFullScreen: Повний екран
+Naninovel.UI.GameSettingsScreenModeDropdown.FullScreenWindow: Повноекранне вікно
+Naninovel.UI.GameSettingsScreenModeDropdown.MaximizedWindow: Розширене вікно
+Naninovel.UI.GameSettingsScreenModeDropdown.Windowed: Вікно
+Naninovel.UI.GameSettingsSkipModeDropdown.Everything: Усе
+Naninovel.UI.GameSettingsSkipModeDropdown.ReadOnly: Прочитане
+Naninovel.UI.GameStateSlot.EmptySlotLabel: Пусто
+Naninovel.UI.SaveLoadMenu.DeleteSaveSlotMessage: Ви впевнені, що хочете видалити слот збереження?
+Naninovel.UI.SaveLoadMenu.OverwriteSaveSlotMessage: Ви впевнені, що хочете перезаписати слот збереження?
+SaveLoadMenu.Tab.Load: Завантаження
+SaveLoadMenu.Tab.QuickLoad: Ш. Завантаження
+SaveLoadMenu.Tab.Save: Зберегти
+SettingsMenu.AutoDelay: Затримка:
+SettingsMenu.Font: Шрифт:
+SettingsMenu.FontSize: Розмір:
+SettingsMenu.Graphics: Графіка:
+SettingsMenu.Language: Мова:
+SettingsMenu.MessageSpeed: Швидкість печаті:
+SettingsMenu.Preview: Превью
+SettingsMenu.PreviewText: Ішла Саша по шосе і смоктала сушку. Справа була у вересні, була їй не нудно. Ішла вона вже півдня, дуже поспішала. Сушіння їсти було не можна, саша дуже злилася.
+SettingsMenu.Resolution: Розширення:
+SettingsMenu.ScreenMode: Режим екрану:
+SettingsMenu.SkipMode: Пропустити:
+SettingsMenu.Tab.Basic: Базові
+SettingsMenu.Tab.Sound: Звук
+SettingsMenu.Tab.Text: Текст
+SettingsMenu.VoiceLanguage: Мова озвучки:
+SettingsMenu.VolumeEffects: Ефекти:
+SettingsMenu.VolumeMaster: Загальний:
+SettingsMenu.VolumeMusic: Музика:
+SettingsMenu.VolumeVoice: Голос:
+TitleMenu.Continue: Продовжити
+TitleMenu.Exit: Вихід
+TitleMenu.Settings: Налаштування
+VariableInput.Submit: Ввід

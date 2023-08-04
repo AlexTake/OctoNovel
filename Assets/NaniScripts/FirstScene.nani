@@ -1,0 +1,45 @@
+@set SecondSceneAvalible=true
+@set FirstSceneAvalible=false
+@back SteampunkNameBG time:0
+@bgm Thoughts volume:0.1 loop:true
+@input PlayerName
+@stop
+
+@showUI PauseBtn
+@back SteampunkFirstScene time:0
+@printer CustomPrinter
+
+@print "Finally I made my way" reset:true speed:1
+@toast "Find something precious" time:5
+@char Dwarf.black pos:70,1 scale:0.6,0.6,1 time:0.1
+@print "\"khe-Khe..Khe\"" author:??? speed:2 reset:true
+
+@print "\"Who is there?!\"" author:{PlayerName} speed:3 reset:true
+
+@print "\"This is my house, so it would be better for you to answer who you are while you are alive and well!\"" author:??? speed:3 reset:true 
+
+@print "\"Hush, hush, I'm just a tramp {PlayerName}, this house looked abandoned, so I decided to profit from some trinkets.\"" author:{PlayerName} speed:2 reset:true 
+
+@print "\"So this is it...\"" author:??? speed:2 reset:true 
+
+@print "\"Yes, my house became a dump after these damn machines went out of control, now I'm like a rat, hiding from new owners.\"" author:??? speed:2 reset:true 
+
+@char Dwarf.default pos:70,1 scale:0.6,0.6,1 time:0.1
+@print "\"By the way, you can call me Dwarf.\"" author:Dwarf speed:2 reset:true 
+
+@print "\"I have an offer for you.\"" author:Dwarf speed:2 reset:true 
+@print "\"You deal with the last machine in my house and you can take whatever you want.\"" author:Dwarf speed:2 reset:true 
+@print "\"I managed to kill everyone, but these machines have learned to clone themselves, so far there is only one, since I was able to lock the gateway through which only a living creature can pass\"" author:Dwarf speed:2 reset:true 
+@print "\"Let me know, what's behind that door?\"" author:{PlayerName} speed:2 reset:true 
+@print "\"There is a steam core, the only thing they lack for replication\"" author:Dwarf speed:2 reset:true
+@print "\"It's funny, but this is the same steam core, without which I will not last a week myself.\"" author:Dwarf speed:2 reset:true
+@print "\"Okie doki, I'll take it for you\"" author:{PlayerName} speed:2 reset:true
+@toast "Find steam core" time:5
+@set CurrentTarget=1
+
+@hidePrinter CustomPrinter
+;MISION UPDATED
+@showUI MapBtn
+@stop
+
+
