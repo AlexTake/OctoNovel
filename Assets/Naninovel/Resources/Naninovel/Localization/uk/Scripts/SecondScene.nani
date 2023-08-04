@@ -29,7 +29,7 @@
 @print "\"Добудь ядро.\"" author:Steamwell speed:2 reset:true 
 # 93c72afc
 ; @print "\"Ok, i'll let you ransack the house if you help me with one thing\"" author:Steamwell speed:2 reset:true
-@print "\"Гаразд, я дозволю тобі обшукати будинок, якщо ти допоможеш мені в чомусь.\"" author:Steamwell speed:2 reset:true
+@print "\"Гаразд, я дозволю тобі обшукати будинок, якщо ти допоможеш мені.\"" author:Steamwell speed:2 reset:true
 # c412b69a
 ; @print "\"What's the deal?\"" author:{PlayerName} speed:2 reset:true
 @print "\"У чому справа?\"" author:{PlayerName} speed:2 reset:true
